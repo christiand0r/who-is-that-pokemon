@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url(./animations.css);
+
+@font-face {
+  font-family: "Pocket Monk";
+  src: url(../fonts/PocketMonk.ttf) format("ttf"),
+    url(../fonts/PocketMonk.woff) format("woff"),
+    url(../fonts/PocketMonk.woff2) format("woff2");
+}
+
+:root {
+  /* @COLORS */
+  --lapis: #145c9e;
+  --blue: #1c448e;
+  --sunglow: #fdca40;
+  --outer: #31393c;
+  --cadmium: #db222a;
+  --maximun: #dd1c1a;
+  --blood: #6e0000;
+  --palepink: #f8d4d5;
+  --british: #034732;
+  --cyan: #d5f0e6;
+  --ghost: #fbfbff;
+  --gray: #ced0ce;
+  --dim: #6e6e6c;
+  /* https://coolors.co/f8d4d5-db222a-dd1c1a-6e0000-d5f0e6-034732-fbfbff-ced0ce-6e6e6c-31393c */
+
+  /* @FONT */
+  --fs: 62.5%;
+  --ff: "Poppins", sans-serif;
+  --fp: "Pocket Monk", sans-serif;
+
+  --normal: 400;
+  --medium: 600;
+  --bold: 800;
+
+  /* @RADIUS */
+  --soft-radius: 0.4rem;
+  --normal-radius: 0.8rem;
+  --hard-radius: 1.8rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--fs);
+  font-family: var(--ff);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: var(--gray);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: var(--hard-radius);
+}
