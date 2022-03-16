@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PokemonPage />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokemonPage from "@/pages/PokemonPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    PokemonPage,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  background: linear-gradient(
+    to left top,
+    var(--maximun) 15%,
+    var(--cadmium) 30%,
+    var(--maximun) 100%
+  );
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 760px) {
+  #app {
+    flex-direction: column;
+  }
 }
 </style>
