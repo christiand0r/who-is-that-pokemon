@@ -1,6 +1,6 @@
 import pokemonApi from "@/api/pokemonApi";
 
-function mixPokemons(arr = []) {
+export const mixPokemons = (arr = []) => {
   //Traverse in reverse
   for (let i = arr.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1)); //Random index
@@ -8,15 +8,9 @@ function mixPokemons(arr = []) {
   }
 
   return arr;
-}
-
-const getPokemons = () => {
-  const pokemonArray = [...Array(650)].map((_, index) => index + 1);
-
-  return pokemonArray;
 };
 
-const getPokemonsName = async (pokemons = []) => {
+export const getPokemonsName = async (pokemons = []) => {
   const requestPokemons = pokemons.map((pokemon) =>
     pokemonApi.get(`/${pokemon}`)
   );
@@ -32,6 +26,12 @@ const getPokemonsName = async (pokemons = []) => {
       sprite: sprites.other.dream_world.front_default,
     };
   });
+};
+
+export const getPokemons = () => {
+  const pokemonArray = [...Array(650)].map((_, index) => index + 1);
+
+  return pokemonArray;
 };
 
 //getPokemonsOptions
