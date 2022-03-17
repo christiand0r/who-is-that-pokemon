@@ -5,7 +5,7 @@
     </h1>
     <ul class="options-list">
       <li
-        v-for="{ name, id } in parsedPokemons"
+        v-for="{ name, id } in pokemons"
         :key="id"
         :disabled="disableOptions"
         :class="classByResponse(id)"
@@ -64,12 +64,6 @@ export default {
     },
   },
   computed: {
-    parsedPokemons() {
-      return this.pokemons.map((pokemon) => ({
-        ...pokemon,
-        name: pokemon.name.toUpperCase(),
-      }));
-    },
     disableOptions() {
       return this.isCorrect !== null ? true : false;
     },
