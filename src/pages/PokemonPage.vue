@@ -49,6 +49,7 @@ export default {
   },
   mounted() {
     this.mixPokemonArray();
+    this.$refs["sound-pokemon"];
   },
   methods: {
     async mixPokemonArray() {
