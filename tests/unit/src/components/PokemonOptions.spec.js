@@ -2,7 +2,7 @@ import { shallowMount } from "@vue/test-utils";
 import { mockPokemons } from "../../mocks/mockPokemons.mock";
 import PokemonOptions from "@/components/PokemonOptions.vue";
 
-describe("Pokemon Optons - Component", () => {
+describe("Pokemon Options - Component", () => {
   let wrapper = null;
 
   beforeEach(() => {
@@ -20,7 +20,7 @@ describe("Pokemon Optons - Component", () => {
   });
 
   test("debe ser igual que el snapshot", () => {
-    expect(wrapper.html).toMatchSnapshot();
+    expect(wrapper.html()).toMatchSnapshot();
   });
 
   test("debemos mostrar 4 opciones de pokemon en el orden recibido", () => {

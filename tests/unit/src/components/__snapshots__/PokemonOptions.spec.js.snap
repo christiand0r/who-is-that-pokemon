@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pokemon Optons - Component debe ser igual que el snapshot 1`] = `[Function]`;
+exports[`Pokemon Options - Component debe ser igual que el snapshot 1`] = `
+<div class="pokemon-options">
+  <h1><img src="" alt="Quién es ese Pokémon"></h1>
+  <ul class="options-list">
+    <li disabled="false" class="">bulbasaur</li>
+    <li disabled="false" class="">charmander</li>
+    <li disabled="false" class="">squirtle</li>
+    <li disabled="false" class="">pikachu</li>
+  </ul>
+</div>
+`;
