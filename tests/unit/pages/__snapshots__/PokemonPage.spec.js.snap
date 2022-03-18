@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pokemon Page - Component debe de ser igual al snapshot cuando cargan los pokemones 1`] = `
+<pokemon-picture-stub pokemonimage="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" showpokemon="false"></pokemon-picture-stub>
+<div class="pokemon-container">
+  <pokemon-options-stub pokemons="[object Object],[object Object],[object Object],[object Object]" pokemonid="25"></pokemon-options-stub>
+  <div class="play-again">
+    <!--v-if-->
+  </div>
+</div>
+`;
